@@ -1,0 +1,58 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    background: url("./rabbittttttt.jpeg");
+    background-size:cover;
+    text-shadow: 1px 1px 2px rgb(248, 246, 246), 0 0 25px rgb(252, 252, 253), 0 0 5px rgb(248, 248, 248);
+    font-size:120%;
+    font-weight: bolder;
+}
+#Score{
+  color:orangered;
+  font-size:160%;
+}
+#board{
+    width:540px;
+    height:540px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background:url("./Screenshot\ 2023-07-12\ 115743.png") ;
+    background-size: cover;
+    border:3px solid whitesmoke;
+    border-radius:25px;
+    border-bottom: orange;
+
+}
+#board div{
+    width:180px;
+    height:180px;
+    background-image:url("./guygu.png");
+    background-size: cover;
+}
+#board div img{
+    width:120px;
+    height: 120px;
+    align-items: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+.cursor{
+    height: 110px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image:url("knifeee.png");
+    background-size: 100% 100%;
+    transform: translate(-20%, -20%);
+    transition: transform .1s;
+    pointer-events: none;
+}
+.cursor.active{
+    transform: translate(-20%, -20%) rotate(-45deg);
+}
